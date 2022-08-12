@@ -1,0 +1,26 @@
+.portfolio-cards-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-owerlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    transform: translate(0, 100%);
+    transition-property: transform;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background-color: rgba(33, 150, 243, 0.9);
+}
+.portfolio-cards-link:hover .portfolio-owerlay,
+.portfolio-cards-link:focus .portfolio-owerlay {
+    transform: translate(0, 0);
+}

@@ -1,0 +1,15 @@
+.studio-section {
+    display: flex;
+}
+.studio-section .items + .items {
+    margin-left: 30px;
+}
+.studio-decore-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--secondery-light-color);
+}

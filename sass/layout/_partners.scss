@@ -1,0 +1,30 @@
+.partners {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.partners-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.partners-list-items {
+    display: flex;
+    align-items: center;
+}
+.partners-list-links {
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    border: 1px solid var(--border-icons);
+    border-radius: 4px;
+    fill: var(--border-icons);
+    transition-property: border, fill;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.partners-list-links:hover,
+.partners-list-links:focus {
+    border: 1px solid var(--primary-accent);
+    fill: var(--primary-accent);
+}
