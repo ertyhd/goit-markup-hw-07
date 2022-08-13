@@ -2,8 +2,9 @@
     color: var(--title-color);
     background-color: var(--secondery-light-color);
     font-family: inherit;
-}
-.button.primary {
-    color: var(--third-light-color);
-    background-color: var(--primary-accent);
+    
+    &.primary {
+        background-color: var(--primary-accent);
+        color: var(--third-light-color);
+    }
 }

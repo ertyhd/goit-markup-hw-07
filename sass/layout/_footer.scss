@@ -34,18 +34,17 @@ address {
     margin-left: 70px;
 }
 .footer-social-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(700, 14px, 1.14);
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--third-light-color);
     margin-bottom: 20px;
 }
 .footer-social-list-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -54,13 +53,15 @@ address {
     transition-property: background-color, fill;
     transition-duration: var(--transition-duration);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus, 
+    &:hover {
+        background-color: var(--primary-accent);
+        fill: var(--third-light-color);
+        border: none;
+    }
 }
-.footer-social-list-links:focus, 
-.footer-social-list-links:hover {
-    background-color: var(--primary-accent);
-    fill: var(--third-light-color);
-    border: none;
-}
+
 .footer-social-list {
     display: flex;
     flex-wrap: wrap;
@@ -75,11 +76,12 @@ address {
     display: flex;
 }
 .footer-form-title {
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(700, 14px, 1.14);
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    font-weight: 700;
     color: #FFFFFF;
     margin-bottom: 20px;
     
@@ -91,6 +93,28 @@ address {
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    padding-left: 16px;
+    @include font(400, 16px, 1.25);
+    // font-weight: 400;
+    // font-size: 16px;
+    // line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: #fff;
+    transition-property: border-color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::placeholder {
+        @include font(400, 16px, 1.25);
+        // font-weight: 400;
+        // font-size: 16px;
+        // line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    &:focus {
+        border-color: var(--primary-accent);
+    }
 }
 .footer-form-button {
     padding: 0;
@@ -101,9 +125,10 @@ address {
     padding-right: 63px;
     padding-left: 29px;
     margin-left: 12px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
+    @include font(700, 16px, 1.87);
+    // font-weight: 700;
+    // font-size: 16px;
+    // line-height: 1.87;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -111,37 +136,19 @@ address {
     transition-property: background-color;
     transition-duration: var(--transition-duration);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--secondary-accent)
+    }
 }
 .footer-form-button-wrapper {
     position: relative;
 }
-.footer-form-button:hover,
-.footer-form-button:focus {
-    background-color: var(--secondary-accent)
-}
+
 .footer-form-icon {
     position: absolute;
     right: 28px;
     top: 13px;
 }
-.footer-form-inpt::placeholder {
-    font-weight: 400;
-    line-height: 1.25;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-.footer-form-inpt {
-    padding-left: 16px;
-    font-weight: 400;
-    line-height: 1.25;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-    color: #fff;
-    transition-property: border-color;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-form-inpt:focus {
-    border-color: var(--primary-accent);
-}
+

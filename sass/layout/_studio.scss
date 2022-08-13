@@ -1,13 +1,13 @@
 .studio-section {
     display: flex;
+
+    & .items + .items {
+        margin-left: 30px;
+    }
 }
-.studio-section .items + .items {
-    margin-left: 30px;
-}
+
 .studio-decore-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     width: 270px;
     height: 120px;
     margin-bottom: 30px;

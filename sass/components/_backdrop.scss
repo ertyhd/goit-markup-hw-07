@@ -10,9 +10,9 @@
     transition-duration: var(--transition-duration);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
-}
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    &.is-hidden {
+        visibility: hidden;
+        pointer-events: none;
+        opacity: 0;
+    }
 }

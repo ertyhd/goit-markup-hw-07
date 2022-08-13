@@ -17,9 +17,10 @@
 }
 .underheader-title {
     color: var(--third-light-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    @include font(900, 44px, 1.4);
+    // font-weight: 900;
+    // font-size: 44px;
+    // line-height: 1.4;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -29,15 +30,19 @@
     margin-right: auto;
 }
 .studio-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
+    @include font(700, 14px, 1.2);
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.2;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 .studio-text {
-    font-size: 14px;
-    line-height: 1.7;
+    @include font(400, 14px, 1.7);
+    // font-weight: 400;
+    // font-size: 14px;
+    // line-height: 1.7;
+    letter-spacing: 0.03em;
 }
 .name-text {
     font-size: 16px;
@@ -48,15 +53,17 @@
 .team-title,
 .portfolio-title,
 .partners-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
+    @include font(700, 36px, 1.2);
+    // font-weight: 700;
+    // font-size: 36px;
+    // line-height: 1.2;
     text-align: center;
 }
 .name-title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
+    @include font(500, 16px, 1.2);
+    // font-weight: 500;
+    // font-size: 16px;
+    // line-height: 1.2;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -65,9 +72,10 @@
 
 .portfolio-text h2 {
     color: var(--title-color);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
+    @include font(700, 18px, 2);
+    // font-weight: 700;
+    // font-size: 18px;
+    // line-height: 2;
     letter-spacing: 0.06em;
 }
 .portfolio-text .portfolio-cards-paragraph {

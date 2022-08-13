@@ -13,14 +13,16 @@
     transition-property: transform;
     transition-duration: var(--transition-duration);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.6;
+    @include font(400, 18px, 1.6);
+    // font-weight: 400;
+    // font-size: 18px;
+    // line-height: 1.6;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     background-color: rgba(33, 150, 243, 0.9);
-}
-.portfolio-cards-link:hover .portfolio-owerlay,
-.portfolio-cards-link:focus .portfolio-owerlay {
-    transform: translate(0, 0);
+
+    .portfolio-cards-link:hover &,
+    .portfolio-cards-link:focus & {
+        transform: translate(0, 0);
+    }
 }

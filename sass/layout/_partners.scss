@@ -22,9 +22,10 @@
     transition-property: border, fill;
     transition-duration: var(--transition-duration);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.partners-list-links:hover,
-.partners-list-links:focus {
-    border: 1px solid var(--primary-accent);
-    fill: var(--primary-accent);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--primary-accent);
+        fill: var(--primary-accent);
+    }
 }
