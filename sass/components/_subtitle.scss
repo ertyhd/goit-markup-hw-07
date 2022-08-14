@@ -15,20 +15,7 @@
 .partners-title {
     color: var(--title-color);    
 }
-.underheader-title {
-    color: var(--third-light-color);
-    @include font(900, 44px, 1.4);
-    // font-weight: 900;
-    // font-size: 44px;
-    // line-height: 1.4;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    max-width: 696px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .studio-title {
     @include font(700, 14px, 1.2);
     // font-weight: 700;
